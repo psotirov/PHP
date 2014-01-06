@@ -1,0 +1,3 @@
+<h2>Location in Sofia</h2>
+<iframe style="width:100%;height:350px;border-style:none;oveflow:hidden;margin:0" src="http://maps.google.com/maps/ms?hl=bg&amp;ie=UTF8&amp;oe=UTF8&amp;t=h&amp;msa=0&amp;msid=103020225168976253437.000453769f6d19f0869d4&amp;ll=42.646918,23.40016&amp;spn=0,0&amp;output=embed"></iframe><br/>
+<a href="http://maps.google.com/maps/ms?hl=bg&amp;ie=UTF8&amp;oe=UTF8&amp;t=h&amp;msa=0&amp;msid=103020225168976253437.000453769f6d19f0869d4&amp;ll=42.646918,23.40016&amp;spn=0,0&amp;source=embed" style="width:100%;font-size:12px;text-align:center" target="_blank">Look at more-detailed map</a>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>Homework_4___books</Name>
+    <ProjectGuid>6054bd0c-4251-4cb7-9798-b8d0c4cc55ed</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Homework_4___books</RootNamespace>
+    <!-- important to be opened by PHP Tools, when also Phalanger Tools are installed -->
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <AssemblyName>Homework 4 - books</AssemblyName>
+    <IISProjectUrl>http://localhost:43692/</IISProjectUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="book-details.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="footer.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="header.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="index.php" />
+    <Compile Include="login.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="new-author.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="new-book.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="books-by-author.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="new-comment.php">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

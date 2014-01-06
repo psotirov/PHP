@@ -1,0 +1,449 @@
+/*
+Theme Name: CMS course Project 1
+Theme URI: http://telerikacademy.com/
+Author: Pavel Sotirov 9001018
+Author URI: http://telerikacademy.com/Users/psotirov
+Description: This theme for WordPress is a result of my job on the final project task in Telerik's CMS 2013 course.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: dark, gray, two-columns, three-columns, right-sidebar, fixed-width, custom-menu, full-width-template
+Text Domain: telerikacademy
+*/
+
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-family: inherit;
+	/*font-size: 100%;*/
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+/* render html5 elements as block */
+header, footer, section, aside, nav, article {
+display: block;
+}
+
+body {
+line-height: 1;
+background: #555;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+color: #333;
+font-size: 14px;
+line-height: 18px;
+}
+	
+/* layout */
+#main {
+	background: #f5f5f5 url(images/colbg.png) repeat-y right top;
+}
+body.single #main, body.page #main {
+	background: #f5f5f5 url(images/page-colbg.png) repeat-y right top;
+}
+.footer-segment {
+	width: 190px;
+}
+nav ul.children {
+	width:150%;
+}
+@media only screen and (max-width:1600px) {
+	#wrapper {
+		width: 1024px;
+	}
+	#content {
+		width: 530px;
+	}
+	body.single #content, body.page #content {
+		width: 730px;
+	}
+}
+@media only screen and (max-width:1024px) {
+	#wrapper {
+		width: 940px;
+	}
+	#content {
+		width: 450px;
+	}
+	body.single #content, body.page #content {
+		width: 650px;
+	}
+}
+@media only screen and (max-width:960px) {
+	#wrapper {
+		width: 760px;
+	}
+	#content {
+		width: 270px;
+	}
+	body.single #content, body.page #content {
+		width: 470px;
+	}
+	.footer-segment {
+		width: 150px;
+	}
+}
+@media only screen and (max-width:780px) {
+	#wrapper {
+		width: 620px;
+	}
+	#main {
+		background: #f5f5f5 url(images/page-colbg.png) repeat-y right top;
+	}
+	#content, body.single #content, body.page #content {
+		width: 330px;
+	}
+	#sidebar1 {
+		display: none;
+	}
+	.footer-segment {
+		width: 110px;
+	}
+	nav .menu>ul>li:first-child {
+		display:none;
+	}
+}
+@media only screen and (max-width:640px) {
+	#wrapper {
+		width: 460px;
+	}
+	#main {
+		background: #f5f5f5;
+	}
+	#content, body.single #content, body.page #content {
+		width: 400px;
+	}
+	#sidebar1 {
+		display: none;
+	}
+	#sidebar2 {
+		display: none;
+	}
+	.footer-segment {
+		margin-bottom: 30px;
+		width: 190px;
+	}
+}
+@media only screen and (max-width:480px) {
+	#wrapper {
+		width: 300px;
+	}
+	#main {
+		background: #f5f5f5;
+	}
+	#content, body.single #content, body.page #content{
+		width: 250px;
+	}
+	#sidebar1 {
+		display: none;
+	}
+	#sidebar2 {
+		display: none;
+	}
+	.footer-segment {
+		width: 190px;
+	}
+	header>h1 {
+		width:100%;
+	}
+	header>h2 {
+		display: none;
+	}
+	nav .menu li, nav ul.children {
+		width: 100%;
+		text-align:center;
+	}
+}
+
+#wrapper {
+margin: 0 auto;
+margin-top: 20px;
+margin-bottom: 20px;
+border: 3px solid #888;
+background: #f5f5f5;
+/* curved border radius */
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+}
+
+nav {
+clear:both;
+width: 100%;
+/*height: 50px;*/
+margin: 0 auto;
+background: #333;
+margin-top: -5px;
+}
+nav:after {
+content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+
+#main {
+width: 100%;
+margin: 0 auto;
+padding-top: 30px;
+overflow: hidden;
+}
+
+#content {
+float: left;
+margin-left: 40px;
+}
+
+#sidebar1 {
+float: left;
+padding-left: 25px;
+width: 180px;
+}
+
+#sidebar2 {
+float: right;
+padding-right: 30px;
+width: 180px;
+}
+
+footer {
+width: 100%;
+margin: 0 auto;
+clear: both;
+}
+
+/* basics */
+
+h1,h2,h3,h4,h5,h6 {
+font-weight: bold;
+clear: both;
+color: #333;
+}
+
+a:link, a:visited {
+color:#111;
+}
+
+a:hover, a:active {
+color: #333;
+}
+
+p {
+margin-bottom: 18px;
+}
+
+li {
+padding-left: 5px;
+}
+
+/* nav */
+
+nav .menu {
+font-size: 16px;
+font-weight: bold;
+}
+
+nav .menu ul {
+margin: 0;
+padding: 17px 0 0 20px;
+list-style: none;
+line-height: normal;
+}
+
+nav .menu li {
+display: block;
+float: left;
+position:relative;
+padding-bottom:15px;
+}
+
+nav .menu a {
+display: block;
+float: left;
+margin-right: 5px;
+padding: 0px 15px;
+color: #f5f5f5;
+max-width: 180px;
+text-decoration: none;
+white-space: nowrap;
+text-overflow: ellipsis;
+overflow: hidden;
+z-index: -1;
+}
+
+nav .menu a:hover {
+text-decoration: underline;
+}
+
+nav ul.children {
+display:none;
+position:absolute;
+left:5px;
+top:25px;
+padding:0;
+}
+nav ul.children li {
+width:100%;
+border-bottom: 1px solid #fff;
+padding: 10px 0;
+}
+nav .menu li:hover > ul.children {
+display:block;
+font-size: 14px;
+background-color: #444;
+z-index: 1;
+}
+
+/** HEADER */
+
+header {
+padding: 20px 0 0 0;
+}
+
+header>h1 {
+float: left;
+margin: 0 0 18px 10px;
+width: 50%;
+font-size: 40px;
+line-height: 36px;
+}
+
+header>h1 a {
+color: #333;
+font-weight: bold;
+text-decoration: none;
+text-shadow: 0px 2px 3px #555;
+}
+
+header>h2 {
+color: #777;
+clear: right;
+float: right;
+width: 35%;
+font-style: italic;
+font-size: 14px;
+margin: 14px 10px 18px 0;
+}
+
+header>img {
+width:100%;
+}
+
+/** ARTICLES **/
+
+article {
+padding-right: 15px;
+}
+
+article img {
+border: none;
+-webkit-box-shadow: 3px 3px 7px #777;
+-moz-box-shadow: 3px 3px 7px #777;
+max-width: 100%;
+}
+
+#content p, ul, ol, hr {
+margin-bottom: 24px;
+}
+
+#content ul ul, ol ol, ul ol, ol ul {
+margin-bottom: 0;
+}
+
+#content h1, h2, h3, h4, h5, h6 {
+color: #333;
+margin: 0 0 20px 0;
+line-height: 1.5em;
+}
+
+.alignleft, img.alignleft {
+display: inline;
+float: left;
+margin-right: 10px;
+}
+
+.alignright, img.alignright {
+display: inline;
+float: right;
+margin-left: 10px;
+}
+
+.aligncenter, img.aligncenter {
+clear: both;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+img.alignleft, img.alignright, img.aligncenter {
+margin-bottom: 12px;
+}
+
+/* sidebar and footer widget blocks */
+
+aside h3 {
+font-size: 18px;
+text-shadow: 0px 2px 3px #ddd;
+}
+
+aside ul {
+list-style: square;
+color: #bbb;
+margin: -15px 0 15px 25px;
+}
+
+#footer-area {
+background: #333;
+color: #f5f5f5;
+font-size: 90%;
+padding: 18px 0;
+overflow: hidden;
+/* curved border radius */
+-moz-border-radius-bottomright: 8px;
+-moz-border-radius-bottomleft: 8px;
+-webkit-border-bottom-left-radius: 8px;
+-webkit-border-bottom-right-radius: 8px;
+}
+
+.footer-segment {
+float: left;
+margin-right: 20px;
+margin-left: 20px;
+}
+
+footer aside h4 {
+color: #faf0e6;
+font-size: 16px;
+line-height: 1.5em;
+}
+
+footer ul {
+list-style: none;
+margin: -15px 0;
+}
+
+footer a:link, footer a:visited {
+color: #ccc;
+}
+
+footer a:hover { 
+text-decoration: underline; 
+}
+
+footer p {
+margin-top: -15px;
+color: #faf0e6;
+}
